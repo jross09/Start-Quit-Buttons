@@ -13,30 +13,13 @@ void setup()
   appHeight = height;
   //
   population();
-  
-  
+  //
 } //End setup
 //
 void draw ()
 {
   if ( noNowReallyStart==true ) {
-    background(0); //Night Mode not considered yet
-    //
-    //Hover Over Feature
-    println("X-value",quitButtonX, mouseX, quitButtonX+quitButtonWidth);
-    println("Y-value", quitButtonY,mouseY, quitButtonY+quitButtonHeight);
-    //
-    //Quit Button Hover Over Feature
-    if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
-        quitButtonColour = orange; //Remember Night Mode
-        //Logical Rectangle Boolean True only when hover over active
-    } else {
-        quitButtonColour = blue; //Remember Day Mode
-        //Logical Rectangle Boolean FALSE all other times
-    } //End Quit Button Colour
-    //
-    fill(quitButtonColour);
-    rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight ); //Quit Button with Hoverover
+    program();
   }
 } //End draw
 //
@@ -57,6 +40,7 @@ void mousePressed()
   //OS Level Start Button
   start = true;
   println("To Start, Press the Space Bar");
+  //Hint: Bug if continue pressing mouse
   //
   //Quit Button: Logical Rectangle, see println in draw()
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
