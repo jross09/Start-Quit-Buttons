@@ -6,19 +6,15 @@ color quitButtonColour, orange=#FA6900, blue=#0048FA;
 //
 void setup() 
 {
-  //Display & Orientation Algorithms not consider yet
   size(400,300); //Landscape
   //fullScreen(); //displayWidth, displayHeight
+  displayOrientation();
   appWidth =  width;
   appHeight = height;
   //
-  //Population
-  float centerX = appWidth * 1/2;
-  float centerY = appHeight * 1/2;
-  quitButtonX = centerX - ( appWidth * 1/4 );
-  quitButtonY = centerY - ( appHeight * 1/4 ); 
-  quitButtonWidth = appWidth * 1/2; //could be centerX, but that is a point
-  quitButtonHeight = appHeight * 1/2; //could be centerY, point not line
+  population();
+  
+  
 } //End setup
 //
 void draw ()
