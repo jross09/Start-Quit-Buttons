@@ -2,7 +2,7 @@
 int appWidth, appHeight;
 Boolean start=false, noNowReallyStart=false;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color quitButtonColour, orange=#FA6900, blue=#0048FA;
+color quitButtonColour, pink=#FA08B2, teal=#25F2CB;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
@@ -10,14 +10,15 @@ float bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight;
 PImage pic;
 //
 void setup() 
-{ size (400,300); //Landscape
+{ size (800,600); //Landscape
   //fullScreen(); //displayWidth, displayHeight
   displayOrientation();
   appWidth =  width;
   appHeight = height;
   //
   population();
-  pic = loadImage("../Images Used/princess-daisy-princess-peach.gif");
+  pic = loadImage("https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png"); 
+  background(pic);
   //
   backgroundImageX = appWidth;
   backgroundImageY = appHeight;
@@ -57,6 +58,8 @@ void draw ()
   if ( noNowReallyStart==true ) {
     program();
   }
+  //
+  image(pic, 0, 0);
 } //End draw
 //
 void keyPressed ()
