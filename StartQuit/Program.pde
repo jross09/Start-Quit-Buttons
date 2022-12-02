@@ -3,7 +3,7 @@ void program() {
     //
     debuggingLogicalRectangle();
     quitButtonHoverOverFeature();
-    
+    //
     fill(quitButtonColour);
     rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight ); //Quit Button with Hoverover
 } //End program

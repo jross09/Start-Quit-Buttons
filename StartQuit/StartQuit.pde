@@ -6,7 +6,7 @@ color quitButtonColour, pink=#F50A87 , teal=#0AF5E7 ;
 //
 void setup()
 {
-  size(400, 300); //Landscape
+  size(800,600); //Landscape
   //fullScreen(); //displayWidth, displayHeight
   displayOrientation();
   appWidth = width;
