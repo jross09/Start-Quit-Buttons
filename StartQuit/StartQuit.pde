@@ -25,7 +25,7 @@ void setup()
 //
 void draw ()
 {
-   fill(pink);
+  fill(pink);
   textAlign(CENTER, CENTER);
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   fontSize = 50; //Largest size given window
