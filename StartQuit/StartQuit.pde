@@ -2,7 +2,7 @@
 int appWidth, appHeight, fontSize;
 Boolean start=false, noNowReallyStart=false;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color quitButtonColour, green=#6DC66C , blue=#1C35B9, pink=#FC1CB2 ;
+color quitButtonColour, purple=#781CB7 , blue=#1C35B9, pink=#FC1CB2 ;
 float titleX, titleY, titleWidth, titleHeight;
 float footerX, footerY, footerWidth, footerHeight;
 String title = "Quit!";

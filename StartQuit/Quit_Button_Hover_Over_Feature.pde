@@ -1,6 +1,6 @@
 void quitButtonHoverOverFeature() {
   if (mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) {
-    quitButtonColour = green; //Remember Knight Mode
+    quitButtonColour = purple; //Remember Knight Mode
     //HINT: Logical Rectanlge Boolean TRUE only when hover over active
   } else {
     quitButtonColour = blue; //Remember Day Mode
